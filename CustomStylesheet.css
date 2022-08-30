@@ -36,6 +36,7 @@ body {
     font-family: 'Crimson Text', serif;
     font-size: 15vh;
     margin-top: 2vh;
+    width: 100%;
     background: linear-gradient(to right top, #eecda3, #ef629f);
     background-clip: text;
     -webkit-background-clip: text;
@@ -57,6 +58,7 @@ body {
     font-size: 3vh;
     color: white;
     margin-top: 5vh;
+    width: 50%;
 }
 
 .cus-section {}

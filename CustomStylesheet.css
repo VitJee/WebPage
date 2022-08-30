@@ -1,0 +1,56 @@
+.cus-body {
+    
+}
+
+.cus-navbar {
+    overflow: hidden;
+    width: 100%;
+    position: fixed !important;
+}
+
+.cus-navbar-links {
+    text-decoration: none;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.cus-navbar-links-active {
+    background-color: #242424;
+    border-radius: 15px;
+}
+
+.cus-navbar-links:hover {
+    text-decoration: none;
+    background-color: #c1c1c1;
+    transition: all 0.7s;
+}
+
+.cus-main {
+    background-color: #242424;
+    color: aquamarine;
+}
+
+.cus-content {
+    overflow: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 63px - 40px);
+}
+
+.cus-margin {
+    background: red;
+}
+
+.cus-footer {
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    width: 100%;
+    line-height: 30px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}

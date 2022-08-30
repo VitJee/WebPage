@@ -5,7 +5,15 @@
 .cus-navbar {
     overflow: hidden;
     width: 100%;
-    position: fixed !important;
+    height: 40vh;
+    text-align: center;
+}
+
+.cus-navbar-title {
+    font-family: serif;
+    font-size: 5vh;
+    color: white;
+    margin-top: 5vh;
 }
 
 .cus-navbar-links {

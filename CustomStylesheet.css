@@ -55,9 +55,9 @@ body {
 
 .cus-navbar-title-text {
     font-family: serif;
+    margin-top: 20vh;
     font-size: 3vh;
     color: white;
-    margin-top: 5vh;
     width: 50%;
 }
 

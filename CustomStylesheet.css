@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -24,6 +28,24 @@ body {
     }
 }
 
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.cus-sidenavbar {
+    background-color:red;
+    position:sticky;
+    height:100vh;
+    top:0;
+    float:right;
+}
+
 .cus-navbar {
     overflow: hidden;
     width: 100%;
@@ -37,39 +59,57 @@ body {
     font-size: 15vh;
     margin-top: 2vh;
     width: 100%;
-    background: linear-gradient(to right top, #eecda3, #ef629f);
+    background-color: red;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: title-color 3s linear infinite;
-}
-
-.cus-navbar-title-foto {
-    height: 55vh;
-    width: 20vw;
-    margin: auto;
-    background-color: red;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .cus-navbar-title-text {
     font-family: serif;
-    margin-top: 20vh;
     font-size: 3vh;
     color: white;
-    width: 50%;
+    overflow: hidden;
+    letter-spacing: .15em;
 }
 
-.cus-section {}
+.cus-navbar-title-text-area {
+    margin: auto;
+    width: 30vw;
+}
 
-.cus-aboutme-title {
+.cus-navbar-title-foto-area {
+    height: 55vh;
+    width: 20vw;
+    margin-top: 5vh;
+}
+
+.cus-navbar-title-foto {
+    height: 100%;
+    width: auto;
+}
+
+.cus-section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 80vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    transform: translate(0, 10vh);
+    transition: all 1s ease-in-out;
+}
+
+.cus-section.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.cus-content-title {
     font-family: serif;
     font-weight: bold;
     font-size: 15vh;
 }
 
-.cus-aboutme-text {
+.cus-content-text {
     font-family: serif;
     font-size: 3vh;
 }

@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -29,32 +30,45 @@
             <div class="row">
                 <div class="cus-navbar-title">Vithushan Jeevanantham</div>
             </div>
-            <div class="row cus-navbar-title-text-area">
-                <div class="cus-navbar-title-text">Willkommen auf meiner Webseite.<br> Hier können Sie alles über mich
-                    erfahren und mich kennenlernen.</div>
-                <div class="cus-navbar-title-foto"></div>
+            <div class="row">
+                <div class="col cus-navbar-title-text-area">
+                    <div class="cus-navbar-title-text">Willkommen auf meiner Webseite.<br> Hier können Sie alles über
+                        mich
+                        erfahren und mich kennenlernen.</div>
+                </div>
+                <div class="col cus-navbar-title-foto-area">
+                    <img src="" alt="" class="cus-navbar-title-foto">
+                </div>
             </div>
         </div>
     </header>
     <main role="main">
-        <div class="container" style="background-color: rgb(191, 190, 190);">
-            <div class="col flex-column text-center cus-section">
-                <div class="cus-aboutme-title">
+        <div class="container" style="height: 300vh;">
+            <div class="col flex-column text-center cus-section" id="f">
+                <div class="cus-content-title">
                     About Me
                 </div>
-                <div class="row cus-aboutme-text">
+                <div class="cus-content-text">
                     Hallo, ich bin eine ambitionierte Person und habe ein grosses Interesse in der Informatik,
                     deshalb besuche ich zurzeit die IMS, an der Altenkanti und in der BBBaden, im 3. Jahr.
                     Meine Stärken liegen in der Mathematik, im Englisch und in der Informatik.
                 </div>
             </div>
-            <div class="row flex-column text-center cus-section">
-                <div class="col">Skills</div>
-                <div class="col">keine</div>
+            <div class="col flex-column text-center cus-section" id="s">
+                <div class="cus-content-title">
+                    Skills
+                </div>
+                <div class="cus-content-text">
+                    keine
+                </div>
             </div>
-            <div class="row flex-column text-center cus-section">
-                <div class="col">Projects and Portfolio</div>
-                <div class="col">noch nie etwas gemacht</div>
+            <div class="col flex-column text-center cus-section">
+                <div class="cus-content-title">
+                    Projekte
+                </div>
+                <div class="cus-content-text">
+                    keine
+                </div>
             </div>
         </div>
     </main>
@@ -63,7 +77,23 @@
 
 <script>
     $(window).on('beforeunload', function () {
-        /*$(window).scrollTop(0);*/
+        $(window).scrollTop(0);
+    });
+    $(window).bind("mousewheel", function (event) {
+        if (!event.originalEvent.wheelDelta >= 0) {
+            var pageTop = $(document).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var tags = $(".cus-section");
+
+            for (var i = 0; i < tags.length; i++) {
+                var tag = tags[i];
+                if ($(tag).position().top < pageBottom) {
+                    $(tag).addClass("visible");
+                } else {
+                    $(tag).removeClass("visible");
+                }
+            }
+        }
     });
 </script>
 

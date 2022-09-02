@@ -1,9 +1,148 @@
+* {
+    list-style: none;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
 
 body::-webkit-rollbar {
     display: none;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#cus-skills {
+    height: 100vh !important;
+}
+
+#java {
+    width: 90%;
+    animation: java 3s;
+}
+
+#mysql {
+    width: 60%;
+    animation: mysql 3s;
+}
+
+#csharp {
+    width: 70%;
+    animation: csharp 3s;
+}
+
+#html {
+    width: 50%;
+    animation: html 3s;
+}
+
+#css {
+    width: 40%;
+    animation: css 3s;
+}
+
+#bootstrap {
+    width: 40%;
+    animation: bootstrap 3s;
+}
+
+#javascript {
+    width: 50%;
+    animation: javascript 3s;
+}
+
+#jquery {
+    width: 70%;
+    animation: jquery 3s;
+}
+
+#cus-footer-line {
+    margin-top: 3vh;
+    border-style: none none solid none;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes csharp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes jquery {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 @keyframes fadeIn {
@@ -36,14 +175,6 @@ body::-webkit-rollbar {
     to {
         width: 100%;
     }
-}
-
-.cus-sidenavbar {
-    background-color: red;
-    position: sticky;
-    height: 100vh;
-    top: 0;
-    float: right;
 }
 
 .cus-navbar {
@@ -114,6 +245,34 @@ body::-webkit-rollbar {
     font-family: 'Lato', sans-serif;
 }
 
+.cus-skills-area {}
+
+.cus-skill {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 0.1);
+}
+
+.cus-skill-bar {
+    height: 20px;
+    float: left;
+    background-color: red;
+}
+
+.cus-skill-title {
+    font-size: 3vh;
+}
+
+.cus-skill:hover {
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.17), 0 8px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
 .cus-projects {
     height: 55vh;
     margin-left: 2vw;
@@ -179,8 +338,6 @@ body::-webkit-rollbar {
     line-height: 30px;
 }
 
-span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
+.cus-footer-githublogo {
+    height: 10vh;
 }

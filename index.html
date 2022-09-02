@@ -43,8 +43,8 @@
         </div>
     </header>
     <main role="main">
-        <div class="container" style="height: 300vh;">
-            <div class="col flex-column text-center cus-section" id="f">
+        <div class="container" style="height: 255vh;">
+            <div class="col flex-column text-center cus-section">
                 <div class="cus-content-title">
                     About Me
                 </div>
@@ -54,7 +54,7 @@
                     Meine Stärken liegen in der Mathematik, im Englisch und in der Informatik.
                 </div>
             </div>
-            <div class="col flex-column text-center cus-section" id="s">
+            <div class="col flex-column text-center cus-section">
                 <div class="cus-content-title">
                     Skills
                 </div>
@@ -66,8 +66,10 @@
                 <div class="cus-content-title">
                     Projekte
                 </div>
-                <div class="cus-content-text">
-                    keine
+                <div class="row cus-content-text">
+                    <div class="col cus-projects-text" style="background-color: red;">bruh</div>
+                    <div class="col cus-projects-text" style="background-color: yellow;">moment</div>
+                    <div class="col cus-projects-text" style="background-color: green;">2</div>
                 </div>
             </div>
         </div>
@@ -77,7 +79,7 @@
 
 <script>
     $(window).on('beforeunload', function () {
-        $(window).scrollTop(0);
+        //$(window).scrollTop(0);
     });
     $(window).bind("mousewheel", function (event) {
         if (!event.originalEvent.wheelDelta >= 0) {
@@ -89,9 +91,9 @@
                 var tag = tags[i];
                 if ($(tag).position().top < pageBottom) {
                     $(tag).addClass("visible");
-                } else {
+                } /*else {
                     $(tag).removeClass("visible");
-                }
+                }*/
             }
         }
     });

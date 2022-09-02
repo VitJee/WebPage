@@ -110,8 +110,12 @@ body::-webkit-scrollbar {
 }
 
 .cus-content-text {
-    font-family: serif;
     font-size: 3vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.cus-projects-text {
+    height: 55vh;
 }
 
 .cus-margin {

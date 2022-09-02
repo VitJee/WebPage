@@ -90,7 +90,7 @@ body::-webkit-rollbar {
 }
 
 .cus-section {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 80vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -114,15 +114,35 @@ body::-webkit-rollbar {
     font-family: 'Lato', sans-serif;
 }
 
-.cus-projects-text {
+.cus-projects {
     height: 55vh;
     margin-left: 2vw;
     margin-right: 2vw;
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
+    position: relative;
 }
 
-.cus-projects-text:hover {
+.cus-projects-titel {
+    background-image: url(resources/Aufgabenverwaltung.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40vh;
+    height: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+}
+
+.cus-projects-titel-pos {
+    margin-top: 45%;
+}
+
+.cus-projects-text {
+
+}
+
+.cus-projects:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.02);
 }

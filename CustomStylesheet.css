@@ -39,11 +39,11 @@ body::-webkit-rollbar {
 }
 
 .cus-sidenavbar {
-    background-color:red;
-    position:sticky;
-    height:100vh;
-    top:0;
-    float:right;
+    background-color: red;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    float: right;
 }
 
 .cus-navbar {
@@ -121,12 +121,10 @@ body::-webkit-rollbar {
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cus-projects-titel {
-    background-image: url(resources/Aufgabenverwaltung.PNG);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 40vh;
     height: 30%;
     border-top-left-radius: 20px;
@@ -134,16 +132,37 @@ body::-webkit-rollbar {
     box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
 }
 
+.cus-projects-aufgabenverwaltung {
+    background-image: url(resources/Aufgabenverwaltung.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cus-projects-tron {
+    background-image: url(resources/TRON.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cus-projects-bbbgame {
+    background-image: url(resources/BBB-Game.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .cus-projects-titel-pos {
-    margin-top: 45%;
+    margin-top: 12vh;
 }
 
 .cus-projects-text {
-
+    font-family: serif;
+    font-size: 2vh;
+    text-align: start;
+    margin-top: 1vh;
+    color: black;
 }
 
 .cus-projects:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.02);
 }
 

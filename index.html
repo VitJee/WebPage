@@ -59,7 +59,7 @@
                     Skills
                 </div>
                 <div class="cus-content-text">
-                    keine
+                    
                 </div>
             </div>
             <div class="col flex-column text-center cus-section">
@@ -67,21 +67,32 @@
                     Projekte
                 </div>
                 <div class="row cus-content-text">
-                    <div class="col cus-projects">
-                        <div class="row cus-projects-titel">
+                    <div class="col cus-projects" id="a">
+                        <div class="row cus-projects-titel cus-projects-aufgabenverwaltung">
                             <div>
-                                <span class="cus-projects-titel-pos">Aufgabenverwaltung</span>
+                                <span class="cus-projects-titel-pos" style="color: black;">Aufgabenverwaltung</span>
+                            </div>
+                        </div>
+                        <div class="row cus-projects-text">
+                            In diesem Projekt habe ich mich mit JavaFX ausseinandergesetzt. Ich habe ein Program
+                            geschrieben, welches Aufgaben erstellen und verwalten kann.
+                        </div>
+                    </div>
+                    <div class="col cus-projects" id="t">
+                        <div class="row cus-projects-titel cus-projects-tron">
+                            <div>
+                                <span class="cus-projects-titel-pos" style="color: white;">TRON</span>
                             </div>
                         </div>
                         <div class="row">b</div>
                     </div>
-                    <div class="col cus-projects">
-                        <div class="row"></div>
-                        <div class="row"></div>
-                    </div>
-                    <div class="col cus-projects">
-                        <div class="row"></div>
-                        <div class="row"></div>
+                    <div class="col cus-projects" id="b">
+                        <div class="row cus-projects-titel cus-projects-bbbgame">
+                            <div>
+                                <span class="cus-projects-titel-pos" style="color: white;">BBB-Game</span>
+                            </div>
+                        </div>
+                        <div class="row">b</div>
                     </div>
                 </div>
             </div>
@@ -109,6 +120,15 @@
                 }*/
             }
         }
+    });
+    $('#a').click(function() { //Aufgabenverwaltung
+        window.open('https://portfolio.bbbaden.ch/user/v-jeevanantham-inf20/untitled-1');
+    });
+    $('#t').click(function() { //TRON
+        window.open('https://portfolio.bbbaden.ch/user/v-jeevanantham-inf20/untitled-2');
+    });
+    $('#b').click(function() { //BBB-Game
+        window.open('https://portfolio.bbbaden.ch/user/v-jeevanantham-inf20/modul226b');
     });
 </script>
 

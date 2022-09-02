@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-rollbar {
     display: none;
 }
 
@@ -78,15 +78,15 @@ body::-webkit-scrollbar {
     width: 30vw;
 }
 
+.cus-navbar-title-foto {
+    height: 100%;
+    width: auto;
+}
+
 .cus-navbar-title-foto-area {
     height: 55vh;
     width: 20vw;
     margin-top: 5vh;
-}
-
-.cus-navbar-title-foto {
-    height: 100%;
-    width: auto;
 }
 
 .cus-section {
@@ -116,6 +116,15 @@ body::-webkit-scrollbar {
 
 .cus-projects-text {
     height: 55vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.cus-projects-text:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
 }
 
 .cus-margin {
